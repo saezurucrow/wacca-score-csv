@@ -10,7 +10,7 @@
 
 
 ```
-javascript:(function(url){s=document.createElement('script');s.src=url;document.body.appendChild(s);})('https://saezurucrow.github.io/wacca-score-csv/scraping.js'))
+javascript:(function(url){s=document.createElement('script');s.src=url;document.body.appendChild(s);})('https://saezurucrow.github.io/wacca-score-csv/scraping.js')
 ```
 ### ブックマークレット登録方法
 - iOS-Safari : https://wayohoo.com/ios/tips/how-to-install-bookmarklet-in-safari-for-ios.html
