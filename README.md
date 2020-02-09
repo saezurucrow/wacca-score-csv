@@ -1,6 +1,6 @@
 # wacca-score-csv
 
-##　これは何
+## これは何
 
 [音楽ゲームWACCA](https://wacca.marv.jp/)のマイページサイトから自身の全楽曲のスコアを取得しCSVファイルとして出力するBookmarkletです。
 
