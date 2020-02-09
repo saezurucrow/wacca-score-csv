@@ -1,4 +1,4 @@
-# wacca-score-csv
+# wacca-score-csv 説明書
 
 ## これは何
 
