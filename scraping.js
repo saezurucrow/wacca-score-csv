@@ -84,19 +84,16 @@ try {
     }
   }
 
-  var url = location.href;
+  const URL = location.href;
 
-  if (url != "https://wacca.marv-games.jp/web/music") {
+  if (URL != "https://wacca.marv-games.jp/web/music") {
     throw new Error("エラーメッセージ");
   }
 
-  var results = [];
-
-  var score_ave = [0, 0, 0];
-
-  var tmpScore, tmpResult;
-
-  var nodes = document.querySelectorAll('[class*="muuri-item"]');
+  let results = [];
+  let score_ave = [0, 0, 0];
+  let tmpScore, tmpResult;
+  let nodes = document.querySelectorAll('[class*="muuri-item"]');
 
   for (let i = 1; i <= nodes.length; i++) {
     tmpScore = nodes[i - 1].querySelectorAll('.playdata__score-list__song-info__score');
