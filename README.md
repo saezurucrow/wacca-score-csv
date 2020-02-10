@@ -12,7 +12,7 @@
 ```
 javascript:(function(url){s=document.createElement('script');s.src=url;document.body.appendChild(s);})('https://saezurucrow.github.io/wacca-score-csv/scraping.js')
 ```
-### ブックマークレット登録方法
+#### ブックマークレット登録方法
 - iOS-Safari : https://wayohoo.com/ios/tips/how-to-install-bookmarklet-in-safari-for-ios.html
 - iOS&Android-Chrome : https://rezv.net/iphone/9352/#Chrome
 - PC : https://qiita.com/aqril_1132/items/b5f9040ccb8cbc705d04
