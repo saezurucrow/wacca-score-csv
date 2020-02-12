@@ -119,7 +119,7 @@ try {
   score_ave[1] = Math.round(score_ave[1] / nodes.length);
   score_ave[2] = Math.round(score_ave[2] / nodes.length);
 
-  alert(`WACCAスコア集計ツール\nAuthor:@chirping_crow\n\nAverage(小数点以下四捨五入):\nNORMAL:${score_ave[0]}\nHARD:${score_ave[1]}\nEXPERT:${score_ave[2]}\n\nボタンを押すとCSVのダウンロードが始まります。`);
+  alert(`WACCAスコア集計ツール\nAuthor:@chirping_crow\n\n曲数:${nodes.length}\n\nAverage(小数点以下四捨五入):\nNORMAL:${score_ave[0]}\nHARD:${score_ave[1]}\nEXPERT:${score_ave[2]}\n\nボタンを押すとCSVのダウンロードが始まります。`);
 
   (new CSV(results)).save('wacca_score.csv');
 } catch (e) {
