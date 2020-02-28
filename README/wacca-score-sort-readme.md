@@ -2,7 +2,7 @@
 
 ## これは何
 
-[音楽ゲーム WACCA](https://wacca.marv.jp/)のマイページサイトから自身のスコアのソートができる Bookmarklet です。
+[音楽ゲームWACCA](https://wacca.marv.jp/)のマイページサイトから自身のスコアのソートができる Bookmarklet です。
 
 ## 登録方法
 
