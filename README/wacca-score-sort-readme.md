@@ -21,3 +21,7 @@ javascript:(function(url){s=document.createElement('script');s.src=url;document.
 2. WACCA 公式マイページにアクセスし、 [プレイデータ]>[楽曲スコア]のページを開く(https://wacca.marv-games.jp/web/music)
 
 3. 登録したブックマークを実行する。
+
+## 実際の動作
+
+https://twitter.com/i/status/1227517710596112384
