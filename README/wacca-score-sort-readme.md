@@ -2,7 +2,7 @@
 
 ## これは何
 
-[音楽ゲーム WACCA](https://wacca.marv.jp/)のマイページサイトから自身のスコアのソートができる Bookmarklet です。
+[音楽ゲームWACCA](https://wacca.marv.jp/)のマイページサイトから自身のスコアのソートができる Bookmarklet です。
 
 ## 登録方法
 
@@ -21,3 +21,7 @@ javascript:(function(url){s=document.createElement('script');s.src=url;document.
 2. WACCA 公式マイページにアクセスし、 [プレイデータ]>[楽曲スコア]のページを開く(https://wacca.marv-games.jp/web/music)
 
 3. 登録したブックマークを実行する。
+
+## 実際の動作
+
+https://twitter.com/i/status/1227517710596112384
