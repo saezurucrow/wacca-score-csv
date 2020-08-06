@@ -91,7 +91,8 @@ try {
   }
 
   let results = [];
-  let score_ave = [0, 0, 0];
+  let score_ave = [0, 0, 0, 0];
+  let inf_num = 0;
   let tmpScore, tmpResult;
   let nodes = $('[class*="muuri-item"]');
 
@@ -103,20 +104,25 @@ try {
       n_score: tmpScore[0].innerText.replace(/\s+/g, "").replace("SCORE", ""),
       h_score: tmpScore[1].innerText.replace(/\s+/g, "").replace("SCORE", ""),
       e_score: tmpScore[2].innerText.replace(/\s+/g, "").replace("SCORE", ""),
+      i_score: tmpScore[3].innerText.replace(/\s+/g, "").replace("SCORE", "")
     }
 
     score_ave[0] += parseInt(tmpResult.n_score);
     score_ave[1] += parseInt(tmpResult.h_score);
     score_ave[2] += parseInt(tmpResult.e_score);
-
+    if (tmpResult.i_score != "0") {
+      score_ave[3] += parseInt(tmpResult.i_score);
+      inf_num++
+    }
     results.push(tmpResult)
   }
 
   score_ave[0] = Math.round(score_ave[0] / nodes.length);
   score_ave[1] = Math.round(score_ave[1] / nodes.length);
   score_ave[2] = Math.round(score_ave[2] / nodes.length);
+  score_ave[3] = Math.round(score_ave[3] / inf_num);
 
-  alert(`WACCAスコア集計ツール\nAuthor:@chirping_crow\n曲数:${nodes.length}\nAverage(小数点以下四捨五入):\nNORMAL:${score_ave[0]}\nHARD:${score_ave[1]}\nEXPERT:${score_ave[2]}\n\nボタンを押すとCSVのダウンロードが始まります。`);
+  alert(`WACCAスコア集計ツール\nAuthor:@chirping_crow\n曲数:${nodes.length}\nINFERNO譜面数:${inf_num}\nAverage(小数点以下四捨五入):\nNORMAL:${score_ave[0]}\nHARD:${score_ave[1]}\nEXPERT:${score_ave[2]}\nINFERNO:${score_ave[3]}\n\nボタンを押すとCSVのダウンロードが始まります。`);
 
   (new CSV(results)).save('wacca_score.csv');
 } catch (e) {
